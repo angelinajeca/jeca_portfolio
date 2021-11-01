@@ -1,0 +1,117 @@
+
+
+*{box-sizing: border-box;}
+
+:root{
+  --black: #1d1d1d;
+  --pink: #e24a87 ;
+  --grey: #6a4f64 ;
+  --white: #e6e1e2;
+  --whiter: #d8d4d5;
+}
+
+body{
+  display: flex;
+  background-color: var(--black);
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* NAVBAR*/
+
+.navbar{
+  position: absolute;
+  background-color: white;
+  color: black;
+  width: 100%;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to bottom left, #7952b3, #946bd1);
+  transition: background-image 0.5s;
+}
+
+/* AUTRES */
+.hero{
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+}  
+
+.text__prenom{
+    font-family: 'Anton', sans-serif;
+    color: var(--black);
+    font-size: 200px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px var(--white);
+    transform: translateX(10%);
+
+}
+
+.text__nom{
+    font-family: 'Anton', sans-serif;
+    color: var(--black);
+    font-size: 200px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px var(--pink);
+    transform: translateY(-30%) translateX(-20%);
+}
+
+.diamant{
+  position: absolute;
+  background-color: var(--white);
+  transform: translateY(45%) rotate(45deg);
+  width: 250px;
+  height: 250px;
+  border-color: var(--whiter);
+  border-style: solid;
+  border-width: 10px;
+  box-shadow: 1px 1px 50px ;
+}
+
+.a-propos{
+  position: relative;
+  color: white;
+  width: 100%;
+  font-size: 3em;
+  left: 50px;
+}
+
+.text_section{
+  color: white;
+  position: absolute;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  left: 70px;
+}
+
+.line1{
+  position: absolute;
+  width: 310px;
+  background-color: var(--pink);
+  height: 20px;
+  z-index: -1;
+  top: 18px;
+  left: -50px;
+}
+
+.line2{
+  position: absolute;
+  width: 310px;
+  background-color: var(--grey);
+  height: 7px;
+  z-index: -1;
+  top: 45px;
+  left: -50px;
+}
+
+
+.presentation{
+  
+  width: 50%;
+  justify-content: center;
+  position: relative;
+}
+
