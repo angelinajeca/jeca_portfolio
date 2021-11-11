@@ -53,29 +53,34 @@ width: 8em;
   display: flex;
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 75vh;
   align-items: center;
   flex-direction: column;
-  margin: 40px;
+  transform: translateY(-5%);
+  
 }  
+
 
 .text__prenom{
     font-family: 'Anton', sans-serif;
     color: var(--black);
-    font-size: 200px;
+    font-size: 20em;
     text-transform: uppercase;
     -webkit-text-stroke: 1px var(--white);
-    transform: translateX(10%);
+    text-align: center;
+    width: 100%;
 
 }
 
 .text__nom{
     font-family: 'Anton', sans-serif;
     color: var(--black);
-    font-size: 200px;
+    font-size: 20em;
     text-transform: uppercase;
     -webkit-text-stroke: 1px var(--pink);
-    transform: translateY(-30%) translateX(-20%);
+    text-align: center;
+    width: 100%;
+    transform: translateY(-35%);
 }
 
 .diamant{
@@ -280,6 +285,15 @@ width: 8em;
   border: white 2px solid
 }
 
+.bloc3csf{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-column: span 2;
+  border: white 2px solid
+}
+
+
 
 img {
   width: 100%;
@@ -287,6 +301,7 @@ img {
   object-fit: cover;
 }
 
+ 
 .button__plus{
   position: relative;
   border: none;
@@ -393,15 +408,15 @@ img {
 }
 
 .contact__deco{
- position: absolute; 
  font-size: 17em;
  text-align: center;
+ transform: translateY(22%);
  width: 100%;
- top: 17%;
+ height: auto;
  color: var(--pink);
  font-family: 'Anton', sans-serif;
  -webkit-text-stroke: 0.5px var(--white);
- opacity: 0.5;
+ opacity: 0.4;
  z-index: 0;
  
 }
