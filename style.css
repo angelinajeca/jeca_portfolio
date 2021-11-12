@@ -294,6 +294,14 @@ width: 8em;
 }
 
 
+.travail__grille__videos{
+width: 100%;
+}
+
+iframe{
+  width: 100%;
+  margin-bottom: 30px ;
+}
 
 img {
   width: 100%;
@@ -361,11 +369,19 @@ img {
   padding-right: 20px;
   font-family: 'Barlow', sans-serif;
   font-weight: 800;
+  transition-property: font-size; 
+  transition-duration: 0.5s;
 }
 
 .liens:hover{
   text-decoration: none;
-  color: var(--black)
+  color: var(--black);
+  font-size: 1.8em;
+}
+
+.liens__textes{
+  margin-top: 30px;
+  width: 100%;
 }
 
 /* MODAL PICS*/
@@ -384,6 +400,11 @@ img {
   text-transform: uppercase;
   -webkit-text-stroke: 1px var(--pink);
   
+}
+
+.img__modal{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* CONTACT */
