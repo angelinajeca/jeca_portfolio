@@ -33,6 +33,13 @@ body {
   position: relative;
   margin-top: 20px;
   width: 8em;
+  transition-duration: 0.2s; 
+  transition-timing-function: ease;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  filter: brightness(5);
 }
 
 .navbar-nav {
@@ -43,10 +50,18 @@ body {
   justify-content: flex-end;
 }
 
-.nav__titre {
-  color: var(--pink);
+.nav-item {
+  transition-duration: 0.2s; 
+  transition-timing-function: ease;
   margin-left: 20px;
 }
+
+.nav-item:hover {
+  color: var(--pink)!important;
+  transform: scale(1.2);
+
+}
+
 
 /* AUTRES */
 .hero {
@@ -70,6 +85,7 @@ body {
   width: 100%;
   animation-name: prenom-anim ;
   animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.09,.67,.36,.98);
 }
 
 @keyframes prenom-anim { 
@@ -86,6 +102,14 @@ body {
   text-align: center;
   width: 100%;
   transform: translateY(-35%);
+  animation-name: nom-anim ;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.09,.67,.36,.98);
+}
+
+@keyframes nom-anim { 
+  from { transform: translateY(-35%) translateX(800px) } 
+  to { transform: translateY(-35%) translateX(0px) }  
 }
 
 .diamant {
@@ -173,6 +197,9 @@ body {
   background-color: var(--pink);
   padding-top: 25px;
   padding-bottom: 20px;
+  z-index: 2;
+  overflow: hidden;
+  
 }
 
 .titre__menu__travaux {
@@ -185,26 +212,49 @@ body {
   background-color: var(--pink);
   padding-top: 25px;
   padding-bottom: 20px;
+  z-index: 2;
 }
+
+/*.titre__menu__deco{
+  position: absolute;
+  transform: translateY(-130px);
+  color:var(--pink);
+  padding-left: 50px;
+  font-size: 2em;
+  -webkit-text-stroke: 1px var(--black);
+  z-index: 0;
+}*/
 
 /* ABOUT */
 .about {
-  display: flex;
   position: relative;
   width: 100%;
-  height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   flex-direction: column;
 }
 
 .titre__hello {
+  position: relative;
   text-align: center;
-  color: white;
   width: 100%;
   font-size: 5em;
   padding: 30px;
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
   color: var(--pink);
+  overflow: hidden;
+}
+
+.hello{
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.02,.67,.42,1.01);
+}
+
+.hello:hover {
+  color: white;
+  transform: rotate(5deg) scale(1.5);
 }
 
 .texte__about {
@@ -214,7 +264,7 @@ body {
   padding-left: 15vw;
   padding-right: 15vw;
   padding-bottom: 30px;
-  font-size: 1.5em;
+  font-size: 1.8em;
   position: relative;
   font-family: "Barlow", sans-serif;
 }
@@ -225,6 +275,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .travail1 {
   position: relative;
@@ -239,18 +290,25 @@ body {
   position: relative;
   font-size: 3em;
   text-align: left;
-  color: white;
   width: 100%;
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
   color: var(--pink);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.02,.67,.42,1.01);
 }
+
+.titre1:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
 
 .titre2 {
   position: relative;
   font-size: 2em;
   text-align: left;
-  color: white;
   width: 100%;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
@@ -268,7 +326,7 @@ body {
   text-align: justify;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 1.5em;
+  font-size: 1.8em;
   position: relative;
   font-family: "Barlow", sans-serif;
 }
@@ -401,6 +459,11 @@ img {
 
 /* MODAL PICS*/
 
+.img__croquis_logo{
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
 /* MERCI BLOCS */
 
 .merci__bloc {
@@ -419,6 +482,10 @@ img {
   margin-bottom: 50px;
 }
 
+.gif__modal{
+  width: 33%;
+}
+
 /* CONTACT */
 
 .contact {
@@ -435,7 +502,7 @@ img {
   font-family: "Anton", sans-serif;
   width: 100%;
   text-align: center;
-  padding-top: 25vh;
+  padding-top: 23vh;
   font-size: 2em;
   z-index: 5;
   position: absolute;
@@ -444,7 +511,7 @@ img {
 .contact__deco {
   font-size: 17em;
   text-align: center;
-  transform: translateY(65px);
+  transform: translateY(45px);
   width: 100%;
   height: auto;
   color: var(--pink);
@@ -515,6 +582,12 @@ img {
   .diamant__image{
     transform: translateX(30px) translateY(-40px) rotate(-45deg) scale(1.4);
   }
+
+  .gif__modal{
+    width: 100%;
+  }
+  
+  
 }
 
 
