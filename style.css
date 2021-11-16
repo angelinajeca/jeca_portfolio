@@ -217,16 +217,6 @@ html, body {
   z-index: 2;
 }
 
-/*.titre__menu__deco{
-  position: absolute;
-  transform: translateY(-130px);
-  color:var(--pink);
-  padding-left: 50px;
-  font-size: 2em;
-  -webkit-text-stroke: 1px var(--black);
-  z-index: 0;
-}*/
-
 /* ABOUT */
 .about {
   position: relative;
