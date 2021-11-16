@@ -74,7 +74,7 @@ html, body {
   align-items: center;
   flex-direction: column;
   transform: translateY(-8%);
-  overflow: hidden;
+  
 }
 
 .text__prenom {
@@ -524,17 +524,12 @@ mark{
   position: absolute;
 }
 
-.contact__deco {
-  font-size: 17em;
-  text-align: center;
-  transform: translateY(45px);
+
+.contact__img{
   width: 100%;
-  height: auto;
-  color: var(--pink);
-  font-family: "Anton", sans-serif;
-  -webkit-text-stroke: 0.5px var(--white);
-  opacity: 0.6;
-  z-index: 0;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.5;
 }
 
 /* MEDIA QUERIES */
@@ -569,13 +564,14 @@ mark{
   .diamant__image{
     transform: translateX(30px) translateY(-60px) rotate(-45deg) scale(1.4);
   }
+
 }
 
 
 @media screen and (max-width: 1200px) {
   .hero {
     padding-top: 160px;
-    height: 100vh;
+    height: 90vh;
   }
 
   .text__prenom {
@@ -622,8 +618,12 @@ mark{
     margin-bottom: 15px;
     cursor: pointer;
   }
-
   
+  .contact__texte {
+
+    font-size: 1.8em;
+
+  }
   
   
 }
@@ -633,7 +633,9 @@ mark{
 
 @media screen and (max-width: 768px) {
   .hero {
-    padding-top: 100px
+    padding-top: 100px;  
+    height: 100vh;
+
   }
 
   .text__prenom {
@@ -672,6 +674,11 @@ mark{
     object-fit: contain;
   }
 
+   
+  .contact__texte {
+    padding-top: 21vh;
 
+  }
+  
 
 }
