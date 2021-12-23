@@ -59,7 +59,6 @@ html, body {
 }
 
 .nav-item:hover {
-  color: var(--pink)!important;
   transform: scale(1.2);
 
 }
